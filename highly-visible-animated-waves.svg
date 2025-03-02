@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 743" preserveAspectRatio="xMidYMid">
+  <defs>
+    <filter id="blur-filter" x="-1" y="-1" width="3" height="3">
+      <feGaussianBlur stdDeviation="50"></feGaussianBlur>
+    </filter>
+
+    <!-- Very dynamic radial gradient -->
+    <radialGradient id="animatedRadialGradient" cx="0.5" cy="0.5" r="2">
+      <stop offset="0" stop-color="#fff6dd">
+        <animate attributeName="stop-color" values="#fff6dd;#ffe0bd;#fff6dd;#ffedd4;#fff6dd" dur="2s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="0.6" stop-color="#3be8b0">
+        <animate attributeName="stop-color" values="#3be8b0;#1aafd0;#3be8b0;#42f5bc;#3be8b0" dur="1.5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="1" stop-color="#3be8b0">
+        <animate attributeName="stop-color" values="#3be8b0;#1aafd0;#3be8b0;#17a0c1;#3be8b0" dur="2s" repeatCount="indefinite" />
+      </stop>
+    </radialGradient>
+
+    <!-- Dynamic linear gradient with dramatic shifts -->
+    <linearGradient id="animatedLinearGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1aafd0">
+        <animate attributeName="stop-color" values="#1aafd0;#0f87a2;#1aafd0;#19a0c1;#1aafd0" dur="2s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="0.8" stop-color="#3be8b0">
+        <animate attributeName="stop-color" values="#3be8b0;#42f5bc;#3be8b0;#2adfb9;#3be8b0" dur="2.5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="1" stop-color="#3be8b0">
+        <animate attributeName="stop-color" values="#3be8b0;#42f5bc;#3be8b0;#2adfb9;#3be8b0" dur="2.5s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#blur-filter)">
+    <!-- Background rectangle with animated radial gradient -->
+    <rect fill="url(#animatedRadialGradient)" x="-76.8" y="-76.8" width="1612.8" height="819.8" />
+
+    <!-- Dramatically animated wave path -->
+    <path fill="url(#animatedLinearGradient)" d="M -76.8 371.5 C 192 371.5 192 334.35 384 334.35 C 576 334.35 960 408.65 1152 408.65 C 1344 408.65 1344 371.5 1612.8 371.5 L 1612.8 819.8 L -76.8 819.8 Z">
+      <animate 
+        attributeName="d" 
+        values="M -76.8 371.5 C 192 371.5 192 334.35 384 334.35 C 576 334.35 960 408.65 1152 408.65 C 1344 408.65 1344 371.5 1612.8 371.5 L 1612.8 819.8 L -76.8 819.8 Z;
+                M -76.8 401.5 C 192 401.5 192 364.35 384 364.35 C 576 364.35 960 378.65 1152 378.65 C 1344 378.65 1344 401.5 1612.8 401.5 L 1612.8 819.8 L -76.8 819.8 Z;
+                M -76.8 341.5 C 192 341.5 192 304.35 384 304.35 C 576 304.35 960 438.65 1152 438.65 C 1344 438.65 1344 341.5 1612.8 341.5 L 1612.8 819.8 L -76.8 819.8 Z;
+                M -76.8 371.5 C 192 371.5 192 334.35 384 334.35 C 576 334.35 960 408.65 1152 408.65 C 1344 408.65 1344 371.5 1612.8 371.5 L 1612.8 819.8 L -76.8 819.8 Z" 
+        dur="3s" 
+        repeatCount="indefinite" />
+    </path>
+  </g>
+</svg>
