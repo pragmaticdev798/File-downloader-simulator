@@ -14,7 +14,8 @@ A simple yet powerful file downloader simulator that visually represents the dow
 
 ## 📸 Screenshot
 
-![image](https://github.com/user-attachments/assets/ab12755d-504a-4688-9e1c-aac3da76c701)
+![image](https://github.com/user-attachments/assets/39472cab-f555-4c4b-b822-f48054e5bd6b)
+
 
 
 ## 🛠️ Technologies Used
